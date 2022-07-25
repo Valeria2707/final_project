@@ -1,0 +1,16 @@
+.link--sevices{
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #24A3FF;
+    padding: 0 0 10px 0;
+}
+
+@media (max-width: 767px){
+    .link--logo:nth-child(n+7){
+        display: none;
+    }
+}
