@@ -1,0 +1,33 @@
+@mixin font($fs, $lh, $fw) {
+    font-size: $fs;
+    line-height: $lh;
+    font-weight: $fw;
+}
+
+@mixin margin($mt, $mr, $mb, $ml) {
+    margin-top: $mt;
+    margin-right: $mr;
+    margin-bottom: $mb;
+    margin-left: $ml;
+}
+
+.text--title{
+    @include font(30px, 37px, 700);
+    background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    @include margin(0, 0, 30px, 0);
+}
+
+.text--subtitle{
+    @include font(22px, 27px, 700);
+    color: #24A3FF;
+    @include margin(0, 0, 15px, 0);
+}
+
+.text--description{
+    @include font(16px, 26px, 400);
+    color: #FFFFFF;
+    @include margin(0, 0, 0, 0);
+}
