@@ -2,18 +2,49 @@
   background: linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
   border-radius: 0px 0px 12px 12px;
   padding: 30px 30px 60px 30px;
+  position: relative;
+  margin-bottom: 30px;
 }
 
-.section--shadow {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  margin-bottom: 30px;
+.section--services::before {
+  content: "";
+  height: 10px;
+  background: #CACADB;
+  border-radius: 0px 0px 12px 12px;
+  position: absolute;
+  bottom: -10px;
+  left: 20px;
+  right: 20px;
+}
+
+.section--services::after {
+  content: "";
+  height: 10px;
+  background: #E7E7F2;
+  border-radius: 0px 0px 12px 12px;
+  position: absolute;
+  bottom: -20px;
+  left: 40px;
+  right: 40px;
 }
 
 @media (min-width: 768px) {
   .section--services {
     padding: 60px;
+  }
+}
+.section--logo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (min-width: 1920px) {
+  .section--logo {
+    width: 1720px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 .link--sevices {
@@ -27,9 +58,75 @@
   padding: 0 0 10px 0;
 }
 
+.link--hillel {
+  background: #1C4280;
+}
+
+.link--wannabiz {
+  background: #143646;
+}
+
+.link--tapgerine {
+  background: linear-gradient(0deg, #F48B30, #F48B30), #F48B30;
+}
+
+.link--3Dlook {
+  background: #9E4DC3;
+}
+
+.link--orangear {
+  background: #FD9339;
+}
+
+.link--adtelligent {
+  background: #E2E2E4;
+}
+
+.link--clickky {
+  background: #C71C36;
+}
+
+.link--ecoleasing {
+  background: #DCF3F9;
+}
+
+.link--infotek {
+  background: #EAEAEA;
+}
+
+.link--sitypark {
+  background: #282240;
+}
+
+.link--artprint {
+  background: #1D4568;
+}
+
+.link--ultimatecard {
+  background: #000000;
+}
+
+.link--logo {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 120px;
+}
+
 @media (max-width: 767px) {
   .link--logo:nth-child(n+7) {
     display: none;
+  }
+}
+@media (min-width: 768px) {
+  .link--logo {
+    width: 33.33%;
+  }
+}
+@media (min-width: 1024px) {
+  .link--logo {
+    width: 25%;
   }
 }
 .text--title {
@@ -40,10 +137,7 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  margin-top: 0;
-  margin-right: 0;
   margin-bottom: 30px;
-  margin-left: 0;
 }
 
 .text--subtitle {
@@ -51,10 +145,7 @@
   line-height: 27px;
   font-weight: 700;
   color: #24A3FF;
-  margin-top: 0;
-  margin-right: 0;
   margin-bottom: 15px;
-  margin-left: 0;
 }
 
 .text--description {
@@ -62,10 +153,7 @@
   line-height: 26px;
   font-weight: 400;
   color: #FFFFFF;
-  margin-top: 0;
-  margin-right: 0;
-  margin-bottom: 0;
-  margin-left: 0;
+  margin: 0;
 }
 
 .block--icon {
@@ -75,27 +163,13 @@
   height: 92px;
   display: flex;
   justify-content: center;
-  margin: 0 0 30px 0;
+  margin-bottom: 30px;
 }
 
 .block--items-services {
   display: flex;
   gap: 30px;
   flex-wrap: wrap;
-}
-
-.block--shadow-dark {
-  background: #CACADB;
-  border-radius: 0px 0px 12px 12px;
-  width: 335px;
-  height: 10px;
-}
-
-.block--shadow-light {
-  background: #E7E7F2;
-  border-radius: 0px 0px 12px 12px;
-  width: 295px;
-  height: 10px;
 }
 
 @media (min-width: 768px) {
@@ -105,30 +179,10 @@
   .block--items-services {
     gap: 60px;
   }
-  .block--shadow-dark {
-    width: 728px;
-  }
-  .block--shadow-light {
-    width: 688px;
-  }
 }
 @media (min-width: 1024px) {
   .block--item-services {
     width: calc(33.33% - 40px);
-  }
-  .block--shadow-dark {
-    width: 984px;
-  }
-  .block--shadow-light {
-    width: 944px;
-  }
-}
-@media (min-width: 1440px) {
-  .block--shadow-dark {
-    width: 1400px;
-  }
-  .block--shadow-light {
-    width: 1360px;
   }
 }
 .image {
@@ -136,21 +190,6 @@
   align-self: center;
 }
 
-.image--block {
-  float: left;
-  width: 100%;
-}
-
-@media (min-width: 768px) {
-  .image--block {
-    width: 33.33%;
-  }
-}
-@media (min-width: 1024px) {
-  .image--block {
-    width: 25%;
-  }
-}
 * {
   box-sizing: border-box;
 }
@@ -180,6 +219,11 @@ body {
 @media (min-width: 1440px) {
   .wrapper {
     width: 1320px;
+  }
+}
+@media (min-width: 1920px) {
+  .wrapper {
+    width: 1600px;
   }
 }
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */

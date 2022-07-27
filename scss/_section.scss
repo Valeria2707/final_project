@@ -1,18 +1,54 @@
+@mixin border-radius() {
+    border-radius: 0px 0px 12px 12px;
+}
+
 .section--services{
     background: linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
     border-radius: 0px 0px 12px 12px;
     padding: 30px 30px 60px 30px;
+    position: relative;
+    margin-bottom: 30px;
 }
 
-.section--shadow{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin-bottom: 30px;
+.section--services::before{
+    content: '';
+    height: 10px;
+    background: #CACADB;
+    @include border-radius();
+    position: absolute;
+    bottom: -10px;
+    left: 20px;
+    right: 20px;
+}
+
+.section--services::after{
+    content: '';
+    height: 10px;
+    background: #E7E7F2;
+    @include border-radius();
+    position: absolute;
+    bottom: -20px;
+    left: 40px;
+    right: 40px;
 }
 
 @media (min-width: 768px){
     .section--services{
         padding: 60px;
+    }
+}
+
+.section--logo{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (min-width: 1920px){
+    .section--logo{
+        width: 1720px;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
