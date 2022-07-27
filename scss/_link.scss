@@ -9,8 +9,76 @@
     padding: 0 0 10px 0;
 }
 
+.link--hillel{
+    background: #1C4280;
+}
+
+.link--wannabiz{
+    background: #143646;
+}
+
+.link--tapgerine{
+    background: linear-gradient(0deg, #F48B30, #F48B30), #F48B30;
+}
+
+.link--3Dlook{
+    background: #9E4DC3;
+}
+
+.link--orangear{
+    background: #FD9339;
+}
+
+.link--adtelligent{
+    background: #E2E2E4;
+}
+
+.link--clickky{
+    background: #C71C36;
+}
+
+.link--ecoleasing{
+    background: #DCF3F9;
+}
+
+.link--infotek{
+    background: #EAEAEA;
+}
+
+.link--sitypark{
+    background: #282240;
+}
+
+.link--artprint{
+    background: #1D4568;
+}
+
+.link--ultimatecard{
+    background: #000000;
+}
+
+.link--logo{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120px;
+}
+
 @media (max-width: 767px){
     .link--logo:nth-child(n+7){
         display: none;
+    }
+}
+
+@media (min-width: 768px){
+    .link--logo{
+        width: 33.33%;
+    }
+}
+
+@media (min-width: 1024px){
+    .link--logo{
+        width: 25%;
     }
 }

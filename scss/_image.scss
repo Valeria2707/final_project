@@ -3,19 +3,4 @@
     align-self: center;
 }
 
-.image--block{
-    float: left;
-    width: 100%;
-}
 
-@media (min-width: 768px){
-    .image--block{
-        width: 33.33%;
-    }
-}
-
-@media (min-width: 1024px){
-    .image--block{
-        width: 25%;
-    }
-}
