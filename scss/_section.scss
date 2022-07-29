@@ -5,9 +5,8 @@
 .section--services{
     background: linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
     border-radius: 0px 0px 12px 12px;
-    padding: 30px 30px 60px 30px;
+    padding: 30px 0 60px 0;
     position: relative;
-    margin-bottom: 30px;
 }
 
 .section--services::before{
@@ -34,7 +33,10 @@
 
 @media (min-width: 768px){
     .section--services{
-        padding: 60px;
+        padding: 60px 0;
+    }
+    .section--man{
+        padding-top: 80px;
     }
 }
 
@@ -51,4 +53,15 @@
         margin-left: auto;
         margin-right: auto;
     }
+}
+
+.section--man{
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+
+.section--news{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background: #F5F5FA;
 }

@@ -11,6 +11,13 @@
     -webkit-text-fill-color: transparent;
     background-clip: text;
     margin-bottom: 30px;
+    margin-top: 0;
+}
+
+@media (min-width: 768px){
+    .text--title{
+        @include font(38px, 46px, 700);
+    }
 }
 
 .text--subtitle{
@@ -23,4 +30,47 @@
     @include font(16px, 26px, 400);
     color: #FFFFFF;
     margin: 0;;
+}
+
+.text--title-gray{
+    @include font(16px, 20px, 700);
+    color: #B3B3BA;
+    margin-bottom: 6px;
+    margin-top: 0;
+}
+
+.text--gray{
+    @include font(14px, 22px, 400);
+    color: #B3B3BA;
+    margin: 0;
+}
+
+.text--trust{
+    @include font(14px, 17px, 700);
+    display: flex;
+    justify-content: center;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #323264;
+    margin: 0;
+}
+
+.text--subtitle-news{
+    @include font(16px, 20px, 700);
+    color: #24A3FF;
+    margin-bottom: 15px;
+    margin-top: 0;
+}
+
+.text--date{
+    @include font(12px, 15px, 700);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #B3B3BA;
+    margin-bottom: 15px;
+    margin-top: 0;
+}
+
+.text--news{
+    color: #000000;
 }
