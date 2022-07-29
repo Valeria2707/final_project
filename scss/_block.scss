@@ -8,10 +8,97 @@
     margin-bottom: 30px;
 }
 
+.block--icon::after{
+    content: '';
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 64px;
+    height: 64px;
+    margin-top: 14px;
+}
+
+.block--backet::after{
+    background-image: url(../image/backet.png);
+}
+
+.block--support::after{
+    background-image: url(../image/Support.png);
+}
+
+.block--coprorate::after{
+    background-image: url(../image/Coprorate.png);
+}
+
+.block--trust::after{
+    background-image: url(../image/Trust.png);
+}
+
+.block--protection::after{
+    background-image: url(../image/Protection.png);
+}
+
+.block--court::after{
+    background-image: url(../image/Court.png);
+}
+
 .block--items-services{
     display: flex;
     gap: 30px;
     flex-wrap: wrap;
+}
+
+.block--team{
+    background: #F5F5FA;
+    border-radius: 12px;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.block--team-text{
+    padding: 30px;
+}
+
+.block--circles{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 60px;
+}
+
+.block--circle{
+    background: #24A3FF;
+    opacity: 0.2;
+    border-radius: 50%;
+    width: 16px;
+    height: 16px;
+}
+
+.block--circle-active{
+    opacity: 1;
+}
+
+.block--cards{
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.block--card{
+    background-color: #FFFFFF;
+    width: 100%;
+}
+
+.block--text-news{
+    padding: 30px;
+}
+
+.block--border{
+    border-top: solid 4px #E6E6F0;
+    margin-bottom: 15px;
+    margin-top: 0;
 }
 
 @media (min-width: 768px){
@@ -21,10 +108,16 @@
     .block--items-services{
         gap: 60px;
     }
+    .block--card-news{
+        width: calc(50% - 30px);
+    }
 }
 
 @media (min-width: 1024px){
     .block--item-services{
+        width: calc(33.33% - 40px);
+    }
+    .block--card{
         width: calc(33.33% - 40px);
     }
 }

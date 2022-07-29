@@ -3,4 +3,35 @@
     align-self: center;
 }
 
+.image--man{
+    width: 100%;
+    object-fit:cover;
+    border-radius: 12px 12px 0px 0px;
+    height: 500px;
+}
 
+.image--news{
+    width: 100%;
+}
+
+@media (min-width: 1024px){
+    .image--man{
+        float: left;
+        margin-right: 30px;
+        height: 528px;
+        width: 400px;
+        border-radius: 12px 0px 0px 12px;
+    }
+}
+
+@media (min-width: 1440px){
+    .image--man{       
+        height: 344px;
+    }
+}
+
+@media (min-width: 1920px){
+    .image--man{       
+        height: 298px;
+    }
+}
