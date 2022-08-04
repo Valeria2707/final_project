@@ -16,22 +16,20 @@
 
 @media (min-width: 1024px){
     .image--man{
-        float: left;
-        margin-right: 30px;
-        height: 528px;
-        width: 400px;
+        height: 536px;
         border-radius: 12px 0px 0px 12px;
     }
 }
 
 @media (min-width: 1440px){
     .image--man{       
-        height: 344px;
+        height: 352px;
     }
 }
 
 @media (min-width: 1920px){
-    .image--man{       
-        height: 298px;
+    .image--man{    
+        height: 305px;
+        width: 400px;
     }
 }

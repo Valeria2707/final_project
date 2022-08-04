@@ -29,9 +29,3 @@ body{
         padding-right: 160px;
     }
 }
-
-.clearfix::after{
-    content: '';
-    display: block;
-    clear: both;
-}
