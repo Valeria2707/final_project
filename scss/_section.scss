@@ -5,7 +5,7 @@
 .section--services{
     background: linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
     border-radius: 0px 0px 12px 12px;
-    padding: 30px 0 60px 0;
+    padding: 0 0 60px 0;
     position: relative;
 }
 
@@ -38,13 +38,6 @@
     .section--man{
         padding-top: 80px;
     }
-}
-
-.section--logo{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
 }
 
 @media (min-width: 1920px){

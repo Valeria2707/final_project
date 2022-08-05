@@ -102,6 +102,25 @@
     margin-top: 0;
 }
 
+.block--form__button{
+    background: #24A3FF;
+    box-shadow: 0px 0px 20px rgba(36, 163, 255, 0.5);
+    border-radius: 12px;
+    width: 315px;
+    height: 56px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    color: #FFFFFF;
+    border: 0;
+}
+
+
+.block--exit{
+    display: flex;
+    justify-content: space-between;
+}
+
 @media (min-width: 768px){
     .block--item-services{
         width: calc(50% - 30px);
@@ -126,6 +145,7 @@
         flex-direction: row;
         flex-wrap: nowrap;
     }
+    .block--form__button{
+        width: 590px;
+    }
 }
-
-
