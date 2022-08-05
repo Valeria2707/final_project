@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <title>
+        Popup
+    </title>
+</head>
+<body>
+    <section>
+        <div class="layer">
+                <form class="form" action="https://fom.in.ua/echo" method="post">
+                    <div class="block--exit">
+                        <h1 class="text--title text--title-form">
+                            We would like to help you
+                        </h1>
+                        <button class="exit" type="button">
+                            <img src="./image/Close.svg" alt="exit">
+                        </button>
+                    </div>
+                    <input type="text" name="name" id="name" class="input" required placeholder="Name">
+                    <input type="text" name="text" id="text" class="input input--message" required placeholder="Message">
+                    <p class="text--form">
+                        How to answer you?
+                    </p>
+                    <input type="tel" name="phone" id="phone" class="input" required placeholder="Phone number">
+                    <input type="email" name="email" id="email" class="input input--email" required placeholder="Email">
+                    <button class="block--form__button" type="submit">
+                        Send message
+                      </button>
+                </form>
+            </div>
+    </section>
+</body>
+</html>
