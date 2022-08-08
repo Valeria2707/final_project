@@ -85,3 +85,36 @@
     text-transform: uppercase;
     color: #B3B3BA;
 }
+
+.text--title-header{
+    @include font(38px, 46px, 700);
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.text--title--stories{
+    @include font(38px, 46px, 700);
+    color: #B3B3BA;
+    display: flex;
+    align-self: flex-end;
+    white-space: nowrap;
+    margin: 0;
+}
+
+.text--title--stories:hover{
+    background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.text--subtitle-stories{
+    @include font(30px, 37px, 700);
+    color: #FFFFFF;
+}
+
+.text--stories{
+    @include font(19px, 30px, 400);
+    color: #FFFFFF;
+    margin: 0;
+}
