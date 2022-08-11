@@ -64,8 +64,11 @@
     height: 120px;
 }
 
-@media (max-width: 767px){
+@media (max-width: 767.50px){
     .link--logo:nth-child(n+7){
+        display: none;
+    }
+    .link--header{
         display: none;
     }
 }
@@ -73,6 +76,21 @@
 @media (min-width: 768px){
     .link--logo{
         width: 33.33%;
+    }
+    .link--header{
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 20px;
+        color: #FFFFFF;
+        text-decoration: none;
+        margin-right: 15px;
+    }
+    .link--header:last-child{
+        margin-right: 0;
+    }
+    .link--header:hover{
+        text-decoration: underline;
+        color: #F0145A;
     }
 }
 

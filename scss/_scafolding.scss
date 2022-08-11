@@ -40,7 +40,13 @@ body{
     line-height: 26px;
 }
 
+.language{
+    display: none;
+}
 
+.language:checked + label{
+    background: #F0145A;
+}
 
 @media (min-width: 376px){
     .layer{
