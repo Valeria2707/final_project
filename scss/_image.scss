@@ -14,6 +14,30 @@
     width: 100%;
 }
 
+.image--hlegal{
+    width: 69.33px;
+    height: 24.80px;
+    margin-bottom: 3.47px;
+}
+
+.image--lawcompany{
+    width: 69.33px;
+    height: 3.81px;
+}
+
+@media (min-width: 768px){
+    .image--hlegal{
+        width: 130px;
+        height: 46.50px;
+        margin-bottom: 6.5px;
+    }
+    
+    .image--lawcompany{
+        width: 130px;
+        height: 7.15px;
+    }
+}
+
 @media (min-width: 1024px){
     .image--man{
         height: 536px;
