@@ -141,8 +141,69 @@
     text-decoration: none;
 }
 
+.text--adress-footer{
+    @include font(16px, 20px, 400);
+    color: #323264;
+    margin-bottom: 10px;
+    text-decoration: none;
+}
+
+.text--map-footer{
+    @include font(12px, 15px, 700);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #24A3FF;
+    text-decoration: none;
+    margin-bottom: 21px;
+}
+
+.text--number-footer{
+    color: #46466E;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    white-space: nowrap;
+}
+
+.text--email-footer{
+    @include font(16px, 20px, 700);
+    color: #24A3FF;
+    margin-bottom: 30px;
+    text-decoration: none;
+}
+
+.text--email-footer:hover{
+    color: #F0145A;
+}
+
+.text--information-footer{
+    @include font(16px, 20px, 400);
+    color: #B3B3BA;
+    text-decoration: none;
+    margin: 0;
+    white-space: nowrap;
+}
+
 @media (max-width: 767.50px){
     .text--adress{
         display: none;
+    }
+}
+
+@media (min-width: 768px){
+
+    .text--email-footer{
+        margin: 0px;
+    }
+    .text--number-footer{
+        margin: 0px;
+    }
+    .text--map-footer{
+        margin: 0px;
+    }
+    .text--adress-footer{
+        margin: 0px;
+    }
+    .text--information-footer{
+        margin-left: -25px;
     }
 }
