@@ -25,6 +25,18 @@
     height: 3.81px;
 }
 
+.image--facebook-footer{
+    content: "";
+    width: 38px;
+    height: 38px;
+    background-image: url(../image/facebook-blue.svg);
+    background-size: 38px 38px;
+}
+
+.image--facebook-footer:hover{
+    background-image: url(../image/red-facebook.svg);
+}
+
 @media (min-width: 768px){
     .image--hlegal{
         width: 130px;
