@@ -37,6 +37,21 @@
     background-image: url(../image/red-facebook.svg);
 }
 
+.image--arrow{
+    content: "";
+    width: 4.50px;
+    height: 9px;
+    background-image: url(../image/arrow.png);
+    background-size: 4.50px 9px;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+}
+
+.image--arrow:hover{
+    background-image: url(../image/red-arrow.svg);
+}
+
 @media (min-width: 768px){
     .image--hlegal{
         width: 130px;

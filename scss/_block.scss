@@ -19,27 +19,27 @@
 }
 
 .block--backet::after{
-    background-image: url(../image/backet.png);
+    background-image: url(../image/backet.svg);
 }
 
 .block--support::after{
-    background-image: url(../image/Support.png);
+    background-image: url(../image/Support.svg);
 }
 
 .block--coprorate::after{
-    background-image: url(../image/Coprorate.png);
+    background-image: url(../image/Coprorate.svg);
 }
 
 .block--trust::after{
-    background-image: url(../image/Trust.png);
+    background-image: url(../image/Trust.svg);
 }
 
 .block--protection::after{
-    background-image: url(../image/Protection.png);
+    background-image: url(../image/Protection.svg);
 }
 
 .block--court::after{
-    background-image: url(../image/Court.png);
+    background-image: url(../image/Court.svg);
 }
 
 .block--items-services{
@@ -90,6 +90,7 @@
     background-color: #FFFFFF;
     width: 100%;
     text-decoration: none;
+    border-radius: 8px;
 }
 
 .block--text-news{
@@ -216,6 +217,13 @@
     margin-bottom: 30px;
 }
 
+.block--service-link{
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 5.50px;
+    align-items: center;
+}
+
 @media (max-width: 767.50px){
     .block--text--stories{
         margin: 0 30px;
@@ -295,14 +303,14 @@
         align-items: flex-start;
         flex-direction: column;
     }
-    .block--contact::after{
+    .block--facebook-header{
         content: "";
         width: 24px;
         height: 24px;
         background-image: url(../image/facebook.svg);
         background-size: 24px 24px;
     }
-    .block--contact:hover::after{
+    .block--facebook-header:hover{
         background-image: url(../image/red-facebook.svg);
     }
     .block--header{
