@@ -60,10 +60,66 @@ body{
     }
 }
 
+@media (max-width: 767.50px){
+    .layer-main{
+        background-color: rgba(50, 50,100, 0.7);
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        display: none;
+        z-index: 1;
+    }
+    
+    .form-popup{
+        background-color: #ffff;
+        border-radius: 12px 12px 0 0;
+        position: absolute;
+        top: 74%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 64px 12px 12px 12px;
+        width: 95.73%;
+    }
+    
+    .close-button{
+        background: transparent;
+        border: 0;
+        margin-bottom: 27px;
+        padding: 0;
+        position: absolute;
+        right: 10px;
+        top: 12px;
+    }
+    .block--popup-main{
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        flex-wrap: wrap;
+    }
+    .form-showed{
+        display: block;
+    }
+}
+
+@media (max-width: 374.50px){
+    .form-popup{
+        border-radius: 12px 12px;
+        top: 50%;
+    }
+}
+
 @media (min-width: 768px){
     .wrapper{
         padding-left: 60px;
         padding-right: 60px;
+    }
+    .layer-main{
+        display: none;
+    }
+    .button--burger{
+        display: none;
     }
 }
 

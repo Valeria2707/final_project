@@ -68,6 +68,24 @@
     height: 120px;
 }
 
+.link--popup{
+    text-decoration: none;
+    color: #24A3FF;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    background: #F5F5FA;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    padding: 7px 0;
+    width: 100%;
+}
+
+.link--popup:hover{
+    color: #F0145A;
+}
+
 @media (max-width: 767.50px){
     .link--logo:nth-child(n+7){
         display: none;
