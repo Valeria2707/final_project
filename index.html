@@ -48,11 +48,25 @@
                             <img src="./image/lawcompany.svg" alt="lawcompany" class="image--lawcompany">
                         </div>
                         <nav class="block--menu__nav">
-                            <a class="button--burger">
+                            <a class="button--burger" id="open-button">
                                 <div class="block--icon-burger"></div>
                                 <div class="block--icon-burger"></div>
                                 <div class="block--icon-burger"></div>
                             </a>
+                            <div class="layer-main" id="layer">
+                                <form  action="https://fom.in.ua/echo" method="post" class="form-popup">
+                                    <button type="button" id="close" class="close-button">
+                                        <img src="./image/red-dagger.svg" alt="dagger">
+                                    </button>
+                                    <div class="block--popup-main">
+                                        <a href="/" class="link--popup">about us</a>
+                                        <a href="/" class="link--popup">послуги</a>
+                                        <a href="/" class="link--popup">команда</a>
+                                        <a href="/" class="link--popup">публікації</a>
+                                        <a href="/" class="link--popup">контакти</a>
+                                    </div>
+                                </form>
+                            </div>
                             <a href="/" class="link--header">about us</a>
                             <a href="/" class="link--header">services</a>
                             <a href="/" class="link--header">team</a>
@@ -300,5 +314,18 @@
             </div>
         </div>
     </footer>
+    <script>
+        const form = document.querySelector('#layer');
+        const close = document.querySelector('#close');
+        const openButton = document.querySelector('#open-button');
+
+        openButton.addEventListener('click', () => {
+            form.classList.add('form-showed');
+        })
+
+        close.addEventListener('click', () => {
+            form.classList.remove('form-showed');
+        })
+    </script>
 </body>
 </html>
